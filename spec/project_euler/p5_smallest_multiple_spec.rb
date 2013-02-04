@@ -25,12 +25,12 @@ end
 
 describe "Problem 5: Smallest multiple" do
 
-  describe "the smallest number that can be divided by each of the numbers " +
+  describe "the smallest number that can be divided by each of the numbers " \
            "from 1 to 10 without any remainder" do
     it { smallest_multiple(1..10).should eq 2520 }
   end
 
-  describe "the smallest number that can be divided by each of the numbers " +
+  describe "the smallest number that can be divided by each of the numbers " \
            "from 1 to 20 without any remainder" do
     it { smallest_multiple(1..20).should eq 232792560 }
   end

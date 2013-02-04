@@ -25,13 +25,13 @@ end
 
 describe "Problem 6: Sum square difference" do
 
-  describe "difference between the sum of the squares of the first ten natural " +
-           "numbers and the square of the sum" do
+  describe "difference between the sum of the squares of the first ten " \
+           "natural numbers and the square of the sum" do
     it { sum_square_difference(1..10).should eq 2640 }
   end
 
-  describe "difference between the sum of the squares of the first one hundred" +
-           "natural numbers and the square of the sum" do
+  describe "difference between the sum of the squares of the first one " \
+           "hundred natural numbers and the square of the sum" do
     it { sum_square_difference(1..100).should eq 25164150 }
   end
 

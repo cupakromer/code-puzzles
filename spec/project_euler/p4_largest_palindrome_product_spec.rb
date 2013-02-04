@@ -14,9 +14,8 @@ class Fixnum
   end
 end
 
-def products(range)
-  range = range.to_a
-  range.product(range).map{|n1, n2| n1*n2}.uniq
+def products(range, n_elements = 2)
+  range.to_a.repeated_combination(n_elements).map{|nums| nums.reduce(:*)}.uniq
 end
 
 def largest_palindrome_from_product(range)

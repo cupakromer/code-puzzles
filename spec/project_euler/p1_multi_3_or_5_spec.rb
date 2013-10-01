@@ -19,8 +19,12 @@ def multiples_of(*multiples)
   end.extend Sequentially
 end
 
+def sum(set)
+  set.reduce(&:+)
+end
+
 def sum_of_multiples_below(limit)
-  multiples_of(3, 5).below(limit).reduce(&:+)
+  sum multiples_of(3, 5).below(limit)
 end
 
 describe "Problem 1: Multiples of 3 and 5" do
